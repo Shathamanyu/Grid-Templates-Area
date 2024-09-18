@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        body{
+            background-image: linear-gradient(white,wheat,white);
+        }
+        .ma{
+            width: 70vw;
+            height: 70vh;
+            border: 1px solid;
+            display: grid;
+            align-items: center;
+            
+            grid-template-areas: 
+            'itm1 itm2 itm3'
+            'itm1 itm5 itm7'
+            'itm4 itm5 itm7'
+            'itm4 itm5 itm6';
+            gap: 10px;
+            padding: 10px;
+        }
+        .item:hover{
+            width: 110%;
+            box-shadow: 0px 0px 11px 5px #000000;
+        }
+
+        .item{
+            width: 90%;
+            height: 90%;
+            /* object-fit: cover; */
+            border: 1px solid;
+        }
+
+        .item1{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPcaG6kR9sogumAYHlXmG0guoL9rnybU3_Cg&s);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm1;
+        }
+        .item2{
+            background-image: url(https://i.pinimg.com/736x/53/51/1d/53511df437c5adf6dd3d2846282cc5df.jpg);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm2;
+        }
+        .item3{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdDqFbgKQpMcq21s8NingniZjOlwh5pHiYWNM9e0FzcPJH2F0uID952TgxW2f4LFv5JBk&usqp=CAU);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm3;
+        }
+        .item4{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStI3m6onsvT7qWgRRhCfQNvtANumCoUGzomR12ucICJf2_z72gyG-ue1y3g5prpuyiCZo&usqp=CAU);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm4;
+        }
+        .item5{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGb7JQxfIMn3yXnsh3IA4zDjjTB8rDvzAU8w&s);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm5;
+        }
+        .item6{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmS28TskawsuG53Q6bJ-JCc0UAzJQ5Vituf7uy2P_SMC79mLNmudEokWBVnduT3YdZRM&usqp=CAU);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm6;
+        }
+        .item7{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0XnPOrguRalHjABq0zmTSm34Zj4D9O5f1c_DxrNiYXQ0AHepjg9tt9APt6efypbjOC00&usqp=CA);
+            background-position: center center;
+            background-size: cover;
+            grid-area: itm7;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="" direction=""><h2>Grid Template Area </h2></marquee>
+    <center><div class="ma">
+        <div class="item item1"></div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+    </div></center>
+    
+</body>
+</html>
